@@ -2,40 +2,52 @@
 <html>
 <head>
 	<title> My First Web Page! </title>
+	
+	<!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
 </head>
 <body>
-	<h1> This is Page 2! </h1>
+	<h1 style="color:red;"> Contact Me! </h1>
 	
-	<h3 style="color: red;"> Page 2 Info: </h3>
-	<br /> <br /> <br />
+	<br />
 	
 	<form action="/action_page.php" mehtod="GET">
+		<div class="form-group">
 		
-		First Name:<br/>
-		<input type="text" name="firstName" value=""><br/>
-
-		Last Name: <br/>
-		<input type="text" name="lastName"><br/>
-
-		Password:<br/>
-		<input type="password" name="pass" ><br/><br/>
-		
-		<textarea name="message" rows="10" cols="30"></textarea> 
-		
-		<br/><br/>
-
-		Send Email To:<br/>
-
-		<select name="department">
-			<option value="tech"> Tech Support </option>
-			<option value="sales"> Sales </option>
-			<option value="accounting"> Accounting </option>
-			<option value="ceo"> CEO </option>
-		</select>
-		
-		<br/><br/>
-		
-		<input type="submit" value="Submit">
+			First Name:<br/>
+			<input type="text" name="firstName" value=""class="form-control"><br/>
+	
+			Last Name: <br/>
+			<input type="text" name="lastName"class="form-control"><br/>
+	
+			Password:<br/>
+			<input type="password" name="pass"class="form-control" ><br/><br/>
+			
+			<textarea name="message" rows="10" cols="30"class="form-control"></textarea> 
+			
+			<br/><br/>
+	
+			Send Email To:<br/>
+	
+			<select name="department"class="form-control">
+				<option value="tech"> Tech Support </option>
+				<option value="sales"> Sales </option>
+				<option value="accounting"> Accounting </option>
+				<option value="ceo"> CEO </option>
+			</select>
+			
+			<br/><br/>
+			
+			<button type="button" class="btn btn-primary">Submit</button>
+		</div>
 
 	</form>
 	
@@ -48,6 +60,11 @@
 	<footer>
 		&copy; Christopher Melius - All Rights Reserved.
 	</footer>
+	
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 	
 </body>
 </html>
